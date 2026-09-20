@@ -1,0 +1,23 @@
+[package]
+name = "todoscan"
+version = "0.1.0"
+edition = "2021"
+description = "Scans a codebase for TODO/FIXME/HACK/XXX comments and reports each with its real git-blame age, oldest first"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/todoscan"
+readme = "README.md"
+keywords = ["todo", "fixme", "git-blame", "cli", "tech-debt"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "todoscan"
+path = "src/lib.rs"
+
+[[bin]]
+name = "todoscan"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
