@@ -6,6 +6,12 @@ actually existed, not just "found in this file" — sorted oldest-first
 so the stalest, most-forgotten markers surface at the top instead of
 getting lost in a flat unordered `grep -r TODO` dump.
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
